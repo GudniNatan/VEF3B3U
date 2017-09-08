@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.compassContainer{
+	margin: 0 auto;
+	text-align: center;
+	height: 100%;
+	padding: 1em;
+}
+
+#svg8{
+	transition: 20ms ease all;
+	margin: 0 auto;
+	max-height: 90%;
+	max-width: 100%;
+	width: auto;
+}
+
+#path3711, #path3712, #path3713, #path3714{
+	stroke-width: 3;
+}
+
+#info{
+	max-height: 10%;
+}
