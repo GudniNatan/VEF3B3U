@@ -264,7 +264,7 @@ class Player extends Rect{
 }
 
 class Bullet extends Rect{
-	constructor(x, y, w, h, direction, speed, lifeSpan=10000) {
+	constructor(x, y, w, h, direction, speed, lifeSpan=5000) {
 		super(x,y,w,h);
 		this.direction = direction; //in radians
 		this.born = Date.now();
