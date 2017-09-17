@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-	<title>Svg Verkefni</title>
+	<title>Canvas Verkefni</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
 	<main>
 		<div id="canvasContainer">
 			<canvas id='mainCanvas'></canvas>
+			<p id="populationP">Earth population:</p>
 		</div>
 	</main>
+	<img src="img/asteroid1.png" style="display: none;" id="asteroidTexture1">
+	<img src="img/asteroid2.png" style="display: none;" id="asteroidTexture2">
+	<img src="img/asteroid3.png" style="display: none;" id="asteroidTexture3">
+	<img src="img/asteroid4.png" style="display: none;" id="asteroidTexture4">
+	<img src="img/earth.png" style="display: none;" id="earthTexture">
+	<script src="js/functions.js"></script>
 	<script src="js/objects.js"></script>
 	<script src="js/canvas.js"></script>
 </body>
