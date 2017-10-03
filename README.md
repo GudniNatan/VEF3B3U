@@ -1,4 +1,7 @@
 # VEF3B3U Verkefni
+Github Pages:
+https://gudninatan.github.io/VEF3B3U/
+
 ## Verkefni 1 - Áttaviti
 Þetta verkefni er áttavitaleikur. Markmiðið er að láta nálina benda beint upp á skjánum. Hún verður rauðari eftir því sem þú nálgast markmiðið.
 
