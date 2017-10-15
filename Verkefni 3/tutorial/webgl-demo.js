@@ -1,3 +1,7 @@
+//Mín komment eru á íslensku
+
+
+
 var cubeRotation = 0.0;
 // will set to true when video can be copied to texture
 var copyVideo = false;
@@ -8,8 +12,10 @@ main();
 // Start here
 //
 function main() {
+  //Sækja canvas
   const canvas = document.querySelector('#glcanvas');
-  const gl = canvas.getContext('webgl'); //sækja webgl context
+  //sækja webgl context
+  const gl = canvas.getContext('webgl'); 
 
   // If we don't have a GL context, give up now
 
@@ -562,13 +568,13 @@ function drawScene(gl, programInfo, buffers, texture, deltaTime) {
 
   // Specify the texture to map onto the faces.
 
-  // Tell WebGL we want to affect texture unit 0
+  // Segir WebGl hvaða texture við viljum stilla
   gl.activeTexture(gl.TEXTURE0);
 
-  // Bind the texture to texture unit 0
+  // Stillir gl.TEXTURE0 sem texture
   gl.bindTexture(gl.TEXTURE_2D, texture);
 
-  // Tell the shader we bound the texture to texture unit 0
+  // Lætur shaderinn vita að við stilltum texture sem gl.TEXTURE0
   gl.uniform1i(programInfo.uniformLocations.uSampler, 0);
 
   {

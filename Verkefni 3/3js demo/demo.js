@@ -1,6 +1,7 @@
 (function() {
-	// body...
+
 	function main() {
+
 		let scene = new THREE.Scene();
 		let camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
@@ -64,7 +65,7 @@
 		spheres = [];
 
 		renderer.domElement.addEventListener("contextmenu", function(event) {
-			// body...
+
 			let sGeo = new THREE.SphereGeometry(0.5, 32, 32);
 			let s = new THREE.Mesh( sGeo, material3 );
 			let vector = new THREE.Vector3(0, 0, -1,).applyQuaternion( camera.quaternion );
@@ -78,6 +79,7 @@
 
 			spheres.push([s, vector]);
 			scene.add(s);
+			
 		});
 
 
