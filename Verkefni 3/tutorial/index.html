@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			*{box-sizing: border-box;}
+			html,body{margin:0px; padding:0px; width:100%; height:100%;}
+			body{background-color:#404040;}
+			canvas{border:1px solid black; width: 100%; height: 100%;}
+			div{display:flex; width:100%; height:100%; align-items:center; justify-content:center;}
+		</style>
+	</head>
+<body>
+	<div>
+		<canvas id="glcanvas" width="1500" height="1000"></canvas>
+	</div>
+	<video src="Firefox.mp4" style="display: none;" id="mvid"></video>
+	<script src="https://cdn.jsdelivr.net/npm/gl-matrix@2/dist/gl-matrix.min.js"></script>
+	<script src="Shaders.js"></script>
+	<script src="webgl-demo.js"></script>
+</body>
+</html>
