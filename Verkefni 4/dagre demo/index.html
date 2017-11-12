@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+	<title>Dagre-d3-v4 Demo</title>
+ 	<meta charset="UTF-8"> 
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<main id="graph">
+		<svg width=500></svg>
+		<button id="submitCourses">Submit</button>
+	</main>
+	<form id="courseDataForm"></form>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="dagre-d3v4.js"></script>
+	<script type="text/javascript">
+	let jsonData;	
+	let treeJson = d3.json("data.json", function(error, data) {
+		if (!error) {
+			jsonData = data;
+		}
+		else{
+			console.log("Error fetching JSON");
+		}
+		let script = document.createElement('script');
+		script.src = "demo.js";
+		document.body.appendChild(script);
+	});
+	</script>
+</body>
+</html>

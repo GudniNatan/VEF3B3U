@@ -1,0 +1,49 @@
+*{
+	box-sizing: border-box;
+}
+#courseContainer{
+	max-width: 100%;
+	display: none;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.course{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 7em;
+	/*display: inline-block;*/
+	border-radius: 1.5em;
+	background: rgb(200,200,200);
+	padding: 0.5em 1em;
+	margin: 0.8em;
+	max-width: 8em;
+	text-align: center;
+	border: 0.05em solid rgba(100,100,100,200);
+}
+.course p{
+	margin: 0.3em auto;
+}
+.set{
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	z-index: 5;
+}
+.level{
+	display: flex;
+	align-items: flex-start;
+}
+svg{
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	opacity: 0.8;
+}

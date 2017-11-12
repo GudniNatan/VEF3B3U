@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+}
+html, body{
+	min-height: 100%;
+	margin: 0;
+}
+
+#graph{
+	min-height: 30em;
+}
+
+.clusters rect {
+  fill: #00ffd0;
+  stroke: #999;
+  stroke-width: 1.5px;
+}
+
+text {
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+  font-size: 14px;
+}
+
+.node rect {
+  stroke: #999;
+  fill: #fff;
+  stroke-width: 1.5px;
+}
+
+.edgePath path {
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+svg{width: 100%; min-height: inherit;}
+
+.course rect{
+	margin: 2em;
+	fill: lightgray;
+}
+.course:not(.availableCourse){
+	fill: gray;
+}
+
+.availableCourse rect{
+	fill: white;
+}
+
+.failedCourse rect{
+	fill: red;
+}
+
+.completedCourse rect{
+	fill: green;
+}
+
+.selectedCourse rect{
+	fill: cyan;
+}
+tspan{
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    cursor: default;
+}
+.clusters rect {
+  fill: #00ffd0;
+  stroke: #999;
+  stroke-width: 1.5px;
+}

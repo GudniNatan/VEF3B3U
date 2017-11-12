@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+	<title>D3 Demo</title>
+ 	<meta charset="UTF-8"> 
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<main id="courseContainer">
+		<div id="VEF2A3U" class="course" data-precursors='[]'>
+			<p>VEF2A3U</p>
+			<p>VefÞróun 2a</p>
+		</div>
+		<div id="VEF2B3U" class="course" data-precursors='[]'>
+			<p>VEF2B3U</p>
+			<p>VefÞróun 2b</p>
+		</div>
+		<div id="VEF3A3U" class="course" data-precursors='["VEF2B3U", "VEF2A3U"]'>
+			<p>VEF3A3U</p>
+			<p>VefÞróun 3a</p>
+		</div>
+		<div id="VEF3B3U" class="course" data-precursors='["VEF2A3U", "VEF2B3U"]'>
+			<p>VEF3B3U</p>
+			<p>VefÞróun 3b</p>
+		</div>
+		<div id="FINAL" class="course" data-precursors='["VEF3B3U"]'>
+			<p>Lokaprof</p>
+			<p>VefÞróun</p>			
+		</div>
+		<div id="GSF2A3U" class="course" data-precursors='[]'>
+			<p>GSF2A3U</p>
+			<p>Gagnasofn</p>
+		</div>
+
+		<div id="GSF3A3U" class="course" data-precursors='["GSF2A3U"]'>
+			<p>GSF3A3U</p>
+			<p>Vennslud gagnamyndun</p>
+		</div>
+		<div id="GSF4A3U" class="course" data-precursors='["GSF3A3U"]'>
+			<p>GSF3A3U</p>
+			<p>Vennslud gagnamyndun</p>
+		</div>
+		<div id="GSF4B3U" class="course" data-precursors='["GSF3A3U"]'>
+			<p>GSF3A3U</p>
+			<p>Vennslud gagnamyndun</p>
+		</div>
+		<div id="GSF4C3U" class="course" data-precursors='["GSF3A3U"]'>
+			<p>GSF3A3U</p>
+			<p>Vennslud gagnamyndun</p>
+		</div>
+		<div id="siouisu" class="course" data-precursors='[]'>
+			<p>hæ</p>
+			<p>Vennslud gagnamyndun</p>
+		</div>
+		<div id="siouisu2" class="course" data-precursors='["siouisu", "VEF2A3U", "GSF3A3U"]'>
+			<p>hæ2</p>
+			<p>Vennslud gagnamyndun</p>
+		</div>
+	</main>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="demo.js"></script>
+</body>
+</html>

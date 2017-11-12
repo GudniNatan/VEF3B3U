@@ -1,0 +1,18 @@
+[{
+  "name": "Father",
+  "class": "node",
+  "textClass": "nodeText",
+  "depthOffset": 0,
+  "marriages": [{
+    "spouse": {
+      "name": "Mother"
+    },
+    "children": [{
+      "name": "Child"
+    }],
+    "parents": {
+      "name": "Grandma"
+    }
+  }],
+  "extra": {}
+}]
