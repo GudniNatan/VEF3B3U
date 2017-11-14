@@ -41,6 +41,9 @@ svg{width: 100%; min-height: inherit;}
 .course:not(.availableCourse){
 	fill: gray;
 }
+.course:not(.availableCourse).completedCourse{
+	fill: white;
+}
 
 .availableCourse rect{
 	fill: white;
