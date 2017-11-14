@@ -51,7 +51,7 @@
 				node.completed = true;
 			}
 			updateGraph();
-			post(selected);
+			//post(selected);
 
 		});
 	}
@@ -310,10 +310,10 @@
 
 		zoom.filter(function(i, j, k, l) {
 			// body...
-			if (event.type == 'mousedown') {
-				return event.button;
+			if (d3.event.type == 'mousedown') {
+				return d3.event.button;
 			}
-			return !event.button;
+			return !d3.event.button;
 		})
 
 		svg.call(zoom);
